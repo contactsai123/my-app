@@ -3,7 +3,7 @@ node{
      git 'https://github.com/contactsai123/my-app'
    }
     stage('Linux Checkout'){
-     sh "hello from pipeline"
+     sh echo "hello from pipeline"
    }
    stage('Compile-Package'){
       // Get maven home path
