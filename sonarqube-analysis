@@ -2,6 +2,9 @@ node{
    stage('SCM Checkout'){
      git 'https://github.com/contactsai123/my-app'
    }
+    stage('Linux Checkout'){
+     sh "hello from pipeline"
+   }
    stage('Compile-Package'){
       // Get maven home path
       //PATH=/opt/apache-maven-3.6.2/bin:$PATH
